@@ -12,7 +12,9 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          "server.js": "src/Server6.js"
+          "server.js": "src/Server6.js",
+          "lib/startServer.js": "src/startServer6.js",
+          "lib/routers/router.js": "src/router6.js"
         }
       }
     },

@@ -1,12 +1,4 @@
-let http = require("http");
+let server = require("./lib/startServer");
+let routers = require("./lib/routers/router.js");
 
-http.createServer((request, response) =>{
-  console.log("Request received.");
-  response.writeHead(200, {"content-type": "text/plain"});
-  response.write("Hello world");
-  response.end();
-}).listen(3333);
-
-
-console.log("Server has started.");
-
+server.start();
